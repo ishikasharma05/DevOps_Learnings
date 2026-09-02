@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: deployment-akms-eks
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: eks-web
+  template: 
+    metadata: 
+      labels: 
+        app: eks-web
+    spec: 
+      containers: 
+      - name: eks-web
+        image: devopsdecode/may-2026:v1
+        ports: 
+        - containerPort: 80

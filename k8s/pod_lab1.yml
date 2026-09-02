@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: may-2026-pod
+spec:
+  containers:
+   - name: ishikash/my-firstrepo
+     image: nginx:alpine
+     ports:
+     - containerPort: 80

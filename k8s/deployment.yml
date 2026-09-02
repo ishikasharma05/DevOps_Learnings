@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: may-2026-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+      env: qa
+  template:
+    metadata:
+      labels:
+        app: web
+        env: qa
+    spec:
+      containers:
+      - name: web1
+        image: httpd:latest
+        ports:
+        - containerPort: 80  

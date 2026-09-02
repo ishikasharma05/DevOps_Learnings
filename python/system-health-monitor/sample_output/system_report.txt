@@ -1,0 +1,38 @@
+===== SYSTEM REPORT =====
+CPU Usage  : 13.5%
+
+RAM Usage  : 72.3%
+
+Disk Usage : 84.0%
+Top Processes:
+
+System Idle Process
+System
+Registry
+csrss.exe
+chrome.exe
+svchost.exe
+
+Report Generated: 2026-06-17 22:38:11
+
+Report saved successfully!
+===== ALERT STATUS =====
+
+Monitoring Complete.
+
+## Alerts
+| Resource | Threshold | Warning Message |
+|----------|-----------|-----------------|
+| CPU | Above 80% | WARNING: High CPU Usage! |
+| RAM | Above 80% | WARNING: High RAM Usage! |
+| Disk | Above 90% | WARNING: Disk Space Critical! |
+
+## Report File
+Running this script saves a file called `system_report.txt` in the 
+same directory. It contains a summary of CPU usage, RAM usage, disk 
+usage, and the top running processes with a timestamp of when the 
+report was generated.
+
+## Tech Used
+- Python 3
+- psutil library
